@@ -1,0 +1,487 @@
+/* ===========================
+   Complaint Management System
+   style.css
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+header{
+    background:#0d6efd;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+}
+
+.logo h2{
+    font-size:28px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    align-items:center;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ffd43b;
+}
+
+.btn{
+    background:#fff;
+    color:#0d6efd;
+    padding:10px 18px;
+    border-radius:5px;
+}
+
+.btn:hover{
+    background:#ffd43b;
+    color:#000;
+}
+
+/* ===========================
+   Hero Section
+=========================== */
+
+/* ===========================
+   Hero Section
+=========================== */
+.hero{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:80px 8%;
+
+background:#eef5ff;
+
+min-height:85vh;
+
+}
+
+.hero-left{
+
+width:50%;
+
+}
+
+.hero-left h1{
+
+font-size:55px;
+
+color:#222;
+
+line-height:1.2;
+
+}
+
+.hero-left span{
+
+color:#0d6efd;
+
+}
+
+.hero-left p{
+
+margin:25px 0;
+
+font-size:19px;
+
+line-height:1.8;
+
+color:#555;
+
+}
+
+.hero-btn{
+
+display:inline-block;
+
+background:#0d6efd;
+
+color:white;
+
+padding:15px 35px;
+
+text-decoration:none;
+
+border-radius:8px;
+
+font-size:18px;
+
+}
+
+.hero-btn:hover{
+
+background:#084298;
+
+}
+
+.hero-right{
+
+width:45%;
+
+text-align:center;
+
+}
+
+.hero-right img{
+    width:800px;
+    height:auto;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+/* ===========================
+   Features
+=========================== */
+
+#features{
+    padding:70px 8%;
+    text-align:center;
+}
+
+#features h2{
+    margin-bottom:40px;
+    color:#0d6efd;
+}
+
+.feature-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* ===========================
+   About
+=========================== */
+
+/* ==========================
+   About Section
+========================== */
+/*================ ABOUT ================*/
+
+#about{
+    padding:80px 8%;
+    background:#f4f7fc;
+}
+
+.about-title{
+    text-align:center;
+    font-size:36px;
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+.about-description{
+    max-width:900px;
+    margin:0 auto 50px;
+    text-align:center;
+    line-height:1.8;
+    font-size:18px;
+    color:#555;
+}
+
+.about-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.about-card{
+    width:320px;
+    background:#fff;
+    border-radius:12px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.about-card:hover{
+    transform:translateY(-8px);
+}
+
+.about-card h3{
+    text-align:center;
+    color:#0d6efd;
+    margin-bottom:20px;
+}
+
+.about-list{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.about-list li{
+    padding:8px 0;
+    font-size:16px;
+    color:#444;
+    line-height:1.6;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+    background:#0d6efd;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+/* ===========================
+   Login & Register
+=========================== */
+
+.login-container,
+.register-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#f4f7fc;
+}
+
+.login-box,
+.register-box{
+    background:#fff;
+    width:420px;
+    padding:40px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.login-box h2,
+.register-box h2{
+    text-align:center;
+    color:#0d6efd;
+    margin-bottom:10px;
+}
+
+.login-box h3,
+.register-box h3{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.input-group{
+    margin-bottom:18px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    outline:none;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus{
+    border:1px solid #0d6efd;
+}
+
+.btn-login,
+.btn-register{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#0d6efd;
+    color:#fff;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-login:hover,
+.btn-register:hover{
+    background:#0b5ed7;
+}
+
+.login-link,
+.register-link{
+    text-align:center;
+    margin-top:20px;
+}
+
+.login-link a,
+.register-link a{
+    color:#0d6efd;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.login-link a:hover,
+.register-link a:hover{
+    text-decoration:underline;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    margin-top:20px;
+}
+
+nav ul li{
+    margin:10px 0;
+}
+
+.hero h1{
+    font-size:34px;
+}
+
+.hero-content{
+    width:90%;
+}
+
+.login-box,
+.register-box{
+    width:90%;
+}
+/* ===========================
+   Footer
+=========================== */
+
+.footer{
+    background:#1e293b;
+    color:#fff;
+    margin-top:50px;
+    padding:40px 8% 20px;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.footer h3,
+.footer h4{
+    margin-bottom:15px;
+}
+
+.footer p{
+    line-height:1.8;
+    color:#ddd;
+}
+
+.footer ul{
+    list-style:none;
+}
+
+.footer ul li{
+    margin-bottom:10px;
+}
+
+.footer ul li a{
+    color:#ddd;
+    text-decoration:none;
+}
+
+.footer ul li a:hover{
+    color:#fff;
+}
+
+.footer hr{
+    margin:25px 0;
+    border:1px solid rgba(255,255,255,.2);
+}
+
+.copyright{
+    text-align:center;
+    color:#ccc;
+    font-size:14px;
+}
+
+@media(max-width:768px){
+
+.footer{
+    text-align:center;
+}
+
+.footer-container{
+    grid-template-columns:1fr;
+}
+
+}
+/* Alert Messages */
+
+.alert-success{
+    background:#d1e7dd;
+    color:#0f5132;
+    border:1px solid #badbcc;
+    padding:12px;
+    border-radius:5px;
+    margin-bottom:20px;
+}
+
+.alert-error{
+    background:#f8d7da;
+    color:#842029;
+    border:1px solid #f5c2c7;
+    padding:12px;
+    border-radius:5px;
+    margin-bottom:20px;
+}
+
+}

@@ -1,0 +1,255 @@
+/* ==========================================
+   Complaint Management System
+   Complaint Page CSS
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+    color:#333;
+}
+
+/* ===========================
+   Page Container
+=========================== */
+
+.container{
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+}
+
+/* ===========================
+   Page Title
+=========================== */
+
+.page-title{
+    text-align:center;
+    color:#0d6efd;
+    margin-bottom:30px;
+}
+
+/* ===========================
+   Complaint Form
+=========================== */
+
+.complaint-form{
+    background:#ffffff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.form-group{
+    margin-bottom:20px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+    outline:none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+    border-color:#0d6efd;
+}
+
+.form-group textarea{
+    resize:vertical;
+    min-height:150px;
+}
+
+/* ===========================
+   Submit Button
+=========================== */
+
+.btn-submit{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:6px;
+    background:#0d6efd;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-submit:hover{
+    background:#0b5ed7;
+}
+
+/* ===========================
+   Complaint Table
+=========================== */
+
+.table-container{
+    margin-top:40px;
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    overflow-x:auto;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th{
+    background:#0d6efd;
+    color:#fff;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    border-bottom:1px solid #ddd;
+}
+
+table tr:hover{
+    background:#f8f9fa;
+}
+
+/* ===========================
+   Status Badges
+=========================== */
+
+.status-pending{
+    background:#ffc107;
+    color:#000;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.status-progress{
+    background:#0dcaf0;
+    color:#fff;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.status-resolved{
+    background:#198754;
+    color:#fff;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+.status-rejected{
+    background:#dc3545;
+    color:#fff;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+/* ===========================
+   Priority Badges
+=========================== */
+
+.priority-low{
+    background:#198754;
+    color:#fff;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+.priority-medium{
+    background:#ffc107;
+    color:#000;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+.priority-high{
+    background:#dc3545;
+    color:#fff;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+}
+
+/* ===========================
+   Action Buttons
+=========================== */
+
+.btn{
+    display:inline-block;
+    padding:8px 15px;
+    border-radius:5px;
+    text-decoration:none;
+    color:#fff;
+    font-size:14px;
+}
+
+.btn-view{
+    background:#0d6efd;
+}
+
+.btn-edit{
+    background:#198754;
+}
+
+.btn-delete{
+    background:#dc3545;
+}
+
+.btn:hover{
+    opacity:0.9;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+.container{
+    width:95%;
+}
+
+.complaint-form{
+    padding:20px;
+}
+
+table{
+    font-size:14px;
+}
+
+.btn{
+    display:block;
+    margin-bottom:8px;
+    text-align:center;
+}
+
+}
