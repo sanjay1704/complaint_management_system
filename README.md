@@ -175,6 +175,4 @@ PROJECT DEVELOPER
 
 Name : Sanjay K
 
-==========================================================
-      THANK YOU FOR USING THIS PROJECT
-==========================================================# complaint_management_system
+
